@@ -2,7 +2,8 @@ const { Client, GatewayIntentBits, Partials, Collection, EmbedBuilder, Permissio
 require('dotenv').config();
 const fs = require('fs');
 const path = require('path');
-const db = require('./database/db.js');
+const db = require('./db.js');
+
 
 const client = new Client({
     intents: [
