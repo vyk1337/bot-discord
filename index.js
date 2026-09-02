@@ -100,7 +100,8 @@ client.on('messageCreate', async (message) => {
         await command.execute(message, args, client);
     } catch (error) {
         console.error(`Erreur lors de l'exécution de la commande ${commandName}:`, error);
-        message.reply({ content: 'Une erreur est survenue lors de l'exécution de cette commande.' }).catch(() => {});
+        message.reply({ content: 'Une erreur est survenue.' }).catch(() => {});
+
     }
 });
 
